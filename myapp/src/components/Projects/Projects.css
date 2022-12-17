@@ -1,5 +1,15 @@
 .project-box{
  justify-content: space-evenly;
+ margin-top: -200px;
+
+}
+.project-title{
+  text-align: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 .characterCard{
   display: flex;
@@ -97,10 +107,15 @@
 .quotes > a{
   margin-bottom: 10px;
   border: 1px solid white;
-  background-color: red;
+  background-color: rgb(97, 171, 240);
   border-radius: 5px;
   width: 75px;
   padding: 5px;
+  transition: all .4s ease-in-out;
+}
+.quotes > a:hover{
+  background-color: rgb(169, 168, 168);
+  border-radius: 50px;
 }
 .quoteText{
   /* margin-top: 20px;
@@ -116,13 +131,14 @@
 .tools{
   display: flex;
   position: fixed;
-  font-size: 35px;
+  font-size: 30px;
   gap: 5px;
   bottom: 5%;
 }
 @media (max-width: 600px) {
   .project-box{
     flex-direction: column;
+    margin-top: -50px;
   }
   .quotes > h2{
     font-size: 22px;
@@ -148,5 +164,11 @@
     position: relative;
     margin: 10px;
   }
-  
+  .project-title{
+    height: 110px;
+    align-items: flex-end;
+  }
+  .project-title > * {
+    margin: 0;
+  }
 }

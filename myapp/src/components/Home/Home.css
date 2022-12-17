@@ -1,16 +1,34 @@
 .home-box{
   flex-direction: column;
+  color: rgb(73, 189, 218)
 }
 .home-box > h1, h3{
   margin: 0;
+  width: 400px;
 }
 .home-box > h1{
+  font-size: 60px;
+  /* color:rgb(180, 228, 250); */
+  text-shadow: 0px 0px 15px rgb(186, 255, 254);
   animation: slideFromRight 1s;
+  color: white;
 }
 .home-box > h3{
   animation: slideFromLeft 1s;
 }
-
+.home-box > .text-one{
+  padding-top: 10px;
+  font-size: 30px;
+}
+.home-box > .text-two{
+  padding-top: 10px;
+  font-size: 20px;
+}
+.hello{
+  font-size: 20px;
+  color: rgb(73, 189, 218);
+  text-shadow: none;
+}
 @keyframes slideFromRight {
   0%{
     transform: translateX(100vw)
@@ -25,5 +43,10 @@
   }
   100%{
     transform: translateX(0)
+  }
+}
+@media (max-width: 600px){
+  .home-box > h1, h3{
+    width: 80vw;
   }
 }

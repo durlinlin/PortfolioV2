@@ -1,0 +1,102 @@
+.about-box{
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5vw;
+}
+.about-left{
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.about-left > .pic{
+  width: 40vh;
+  height: 40vh;
+  border-radius: 100vh;
+  border: 10px solid white;
+  background-image: url('../img/pp.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+.about-left > a{
+  font-size: 20px;
+  height: 40px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: rgb(97, 171, 240);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  transition: all .3s ease-in-out;
+}
+.about-left > a:hover{
+  border-radius: 50px;
+  background-color: rgb(169, 168, 168);
+}
+.about-right{
+width: 40%;
+}
+
+.exp-box{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  /* text-align: center; */
+}
+.exp-box > div {
+  width: fit-content;
+  height: 15vh;
+}
+.exp-box > div > * {
+  height: 50%;
+  margin: 0;
+}
+.exp-box > div > p {
+  font-size: 15px;
+}
+.exp-box > div > h4{
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  .about-box{
+    flex-direction: column-reverse;
+    height: fit-content;
+  } 
+  .about-left > a{
+    margin: 20px;
+  }
+  .about-left, .about-right{
+    width: 90%;
+    height: 50%;
+  }
+  .about-left{
+    gap: 10px;
+  }
+  .about-left > .pic{
+    height: 20vh;
+    width: 20vh;
+    margin: 20px;
+  }
+  
+  .exp-box{
+    font-size: 18px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .exp-box > div {
+    width: calc(100%/3);
+  }
+  .exp-box > div > * {
+    height: 50%;
+  }
+ 
+}

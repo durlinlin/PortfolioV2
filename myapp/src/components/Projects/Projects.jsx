@@ -33,7 +33,9 @@ let projects = [
 ];
   
   return (
-    <div className="screen project-box" ref={props.ref}>
+    <>
+      <div className='project-title'><h1>Projects</h1></div>
+    <div className="screen project-box">
       {projects.map(
         (project, key) =>
           project.name.includes(props.show) && (
@@ -65,6 +67,7 @@ let projects = [
             </div>
           )
       )}
-    </div>
+      </div>
+      </>
   );
 }

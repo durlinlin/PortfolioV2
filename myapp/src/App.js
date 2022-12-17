@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { BsGithub, BsDisplay, BsDisplayFill,BsLinkedin} from 'react-icons/bs'
+
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
@@ -63,6 +65,22 @@ function App() {
           <Projects show={showProject } />
         </div>
       </div>
+      <nav className='side-nav'>
+      <a
+                    href={"https://github.com/durlinlin"}
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <BsGithub style={{ color: "white" }} /> 
+        </a>
+        <a
+                    href={"https://www.linkedin.com/in/linlinlam/"}
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <BsLinkedin style={{ color: "white" }} /> 
+                  </a>
+      </nav>
     </div>
   );
 }
