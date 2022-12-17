@@ -1,0 +1,29 @@
+.home-box{
+  flex-direction: column;
+}
+.home-box > h1, h3{
+  margin: 0;
+}
+.home-box > h1{
+  animation: slideFromRight 1s;
+}
+.home-box > h3{
+  animation: slideFromLeft 1s;
+}
+
+@keyframes slideFromRight {
+  0%{
+    transform: translateX(100vw)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+@keyframes slideFromLeft {
+  0%{
+    transform: translateX(-100vw)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
