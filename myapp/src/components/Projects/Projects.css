@@ -8,25 +8,24 @@
   align-items: center;
   height: 25vh;
   width: 25vh;
-  animation: pop .5s;
+  animation: pop .5s ease-in;
 }
+
 @keyframes pop {
   0%{
     transform: scale(0);
   }
-  50%{
-    transform: scale(1.1)
-  }
+
   100%{
     transform: scale(1);
   }
 }
 .characterCard:hover .characterName{
-  transform: translateY(calc(-25vh/2));
+  transform: translateY(calc(-30vh/2));
   z-index: 4;
 }
 .characterCard:hover .characterQuote{
-  transform: translateY(calc(25vh/2));
+  transform: translateY(calc(30vh/2));
   z-index: 3;
 }
 .characterName{
@@ -36,10 +35,12 @@
   align-items: center;
   flex-wrap: wrap;
   text-transform: capitalize;
-  height: 25vh;
-  width: 25vh;
+  height: 35vh;
+  width: 35vh;
   z-index: 2;
-  background: rgb(253, 248, 248);  
+  /* background: rgb(253, 248, 248);   */
+  background-size: cover;
+  background-position: center;
   transition: transform 0.5s;
   box-shadow:
   2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -49,7 +50,7 @@
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   100px 100px 80px rgba(0, 0, 0, 0.07);
   border-radius: 3vh;
-  border: 5px solid pink;
+  border: 3px solid rgba(255, 255, 255, 0.9);
   color: white;
   font-size: 25px;
   font-weight: bolder;
@@ -63,18 +64,21 @@
   row-gap: 30px;
   flex-direction: column;
   border-radius: 1vh;
-  height: 25vh;
-  width: 25vh;
+  height: 30vh;
+  width: 30vh;
   transition: transform 0.5s;
-  background-color: rgb(238, 253, 253);
-  border-radius: 3vh;
-  border: 5px solid pink;
+  /* background-color: rgb(238, 253, 253); */
   overflow: scroll;
-  box-shadow: inset 0px 0px 40px 10px white;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .quotes{
-  display: flexbox;
+  display: flex;
   align-items: center;
   justify-content:center;
   flex-direction: column;
@@ -87,6 +91,17 @@
   /* gap: 15px; */
   margin:auto;
 }
+.quotes > h2{
+  text-align: center;
+}
+.quotes > a{
+  margin-bottom: 10px;
+  border: 1px solid white;
+  background-color: red;
+  border-radius: 5px;
+  width: 75px;
+  padding: 5px;
+}
 .quoteText{
   /* margin-top: 20px;
   margin-bottom: 20px; */
@@ -98,23 +113,40 @@
   padding-top: 5px;
   border-bottom: 1px solid rgb(194, 194, 194);
 }
-
+.tools{
+  display: flex;
+  position: fixed;
+  font-size: 35px;
+  gap: 5px;
+  bottom: 5%;
+}
 @media (max-width: 600px) {
   .project-box{
     flex-direction: column;
   }
+  .quotes > h2{
+    font-size: 22px;
+  }
+
   .characterQuote, .characterName, .characterCard {
-    height: 20vh;
-    width: 20vh;
+    height: 23vh;
+    width: 23vh;
   }
   .characterCard:hover .characterName{
-    transform: translateX(calc(-20vw));
+    transform: translateX(calc(-23vw));
     z-index: 4;
   }
   .characterCard:hover .characterQuote{
-    transform: translateX(calc(20vw));
+    transform: translateX(calc(23vw));
     z-index: 3;
   }
-  
+  .quotes{
+    overflow: hidden;
+  }
+  .tools{
+    font-size: 20px;
+    position: relative;
+    margin: 10px;
+  }
   
 }
