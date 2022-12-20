@@ -1,6 +1,6 @@
 .nav-container{
   border: 1px solid red;
-  width: 300px;
+  width: 350px;
   height: 50px;
   position: fixed;
   display: flex;
@@ -20,4 +20,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .nav-container > * {
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-container > a:hover {
+  color: rgb(97, 171, 240);
 }

@@ -1,0 +1,9 @@
+.bg-sparkles{
+  border: 1px solid red
+}
+/* @media (max-width: 600px){
+  .bg-sparkles{
+    overflow-x: hidden;
+    width: 90vw;
+  }
+} */

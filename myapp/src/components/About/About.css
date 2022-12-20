@@ -18,13 +18,18 @@ flex-direction: column;
   background-image: url('../img/pp.jpg');
   background-size: cover;
   background-position: center;
-
+  filter: grayscale(1);
+  transition: all .5s;
+}
+.about-left > .pic:hover {
+  filter: grayscale(0);
 }
 .about-left > a{
   font-size: 20px;
   height: 40px;
   width: 150px;
   border: 1px solid white;
+  /* color: #d8d8ff; */
   border-radius: 5px;
   text-decoration: none;
   background-color: rgb(97, 171, 240);

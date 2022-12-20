@@ -20,10 +20,9 @@
 .side-nav{
   position:fixed;
   left: 15px;
-  top: calc(50% - 60px);
-  border: 1px solid red;
+  top: calc(50% - 80px);
   width: 50px;
-  height: 120px;
+  height: 160px;
   position: fixed;
   display: flex;
   justify-content: space-evenly;
@@ -39,4 +38,33 @@ backdrop-filter: blur(6.8px);
 -webkit-backdrop-filter: blur(6.8px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
+.side-nav > a:hover{
+  color: rgb(169, 168, 168);
+}
+.side-nav > .side-nav-icon:hover{
+  color: black;
+}
+@media (max-width: 600px){
+ .side-nav{
+  all:unset;
+  position: fixed;
+  bottom: 15px;
+  width: 160px;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  gap: 10%;
+  z-index: 5;
+  font-size: 25px;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.17);
+border-radius: 100px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+ }
+}

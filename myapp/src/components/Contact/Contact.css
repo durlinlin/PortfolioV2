@@ -1,0 +1,28 @@
+.contact-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container > h3{
+  text-align: center;
+}
+.contact-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* width: 90vw; */
+}
+
+.contact-content > a:hover{
+  color: rgb(169, 168, 168);
+}
+@media (max-width: 600px){
+  .contact-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
