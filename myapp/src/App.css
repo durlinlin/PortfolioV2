@@ -38,12 +38,16 @@ backdrop-filter: blur(6.8px);
 -webkit-backdrop-filter: blur(6.8px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.side-nav > a:hover *{
+  color: rgb(97, 171, 240);
+}
 .side-nav > a:hover{
-  color: rgb(169, 168, 168);
+  transform: translateY(-4px);
+  transition: all 0.2s ease-in-out;
 }
-.side-nav > .side-nav-icon:hover{
+/* .side-nav > *:hover{
   color: black;
-}
+} */
 @media (max-width: 600px){
  .side-nav{
   all:unset;

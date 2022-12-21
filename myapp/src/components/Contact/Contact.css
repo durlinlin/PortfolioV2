@@ -16,9 +16,17 @@
   /* align-items: center; */
   /* width: 90vw; */
 }
-
+.contact-content > a{
+  width: fit-content;
+}
 .contact-content > a:hover{
-  color: rgb(169, 168, 168);
+  color: rgb(97, 171, 240);
+  transform: translateY(-1.5px);
+  transition: all 0.2s ease-in-out;
+}
+.contact-content > a:hover *{
+  color: rgb(97, 171, 240);
+
 }
 @media (max-width: 600px){
   .contact-content{

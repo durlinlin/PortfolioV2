@@ -24,4 +24,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .nav-container > a:hover {
   color: rgb(97, 171, 240);
+  transform: translateY(-1.5px);
+  transition: all 0.2s ease-in-out;
 }
