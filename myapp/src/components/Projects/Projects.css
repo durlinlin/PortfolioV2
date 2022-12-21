@@ -85,6 +85,7 @@
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
 }
 
 .quotes{
@@ -92,7 +93,7 @@
   align-items: center;
   justify-content:center;
   flex-direction: column;
-  overflow: scroll;
+  overflow: hidden;
   width: 90%;
   height: 90%;
   /* border: 1px solid red; */
