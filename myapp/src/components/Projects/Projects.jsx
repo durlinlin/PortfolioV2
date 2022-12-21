@@ -12,6 +12,7 @@ let projects = [
   {
     name: "Talkin' Smack",
     image: SmackImage,
+    info: "A Twitter inspired social media site where you can talk smack with your friends (or frenemies).",
     git: "https://github.com/SEI-Buffleheads/talkin-smack-fe",
     demo: "https://genuine-marshmallow-56fd7d.netlify.app",
     tools: [<FaReact />, <SiDjango />, <SiPostgresql />, ],
@@ -19,6 +20,7 @@ let projects = [
   {
     name: "Legendary Slayers",
     image: LegendImg,
+    info: "An interactive website based on a popular game League of Legends where you can view, save, and edit your favorite champions and items.",
     git: "https://github.com/durlinlin/Legendary-Slayers-FE",
     demo: "https://legendsofleague.netlify.app",
     tools: [<FaReact />, <FaNodeJs/>, <SiExpress />, <SiJsonwebtokens />, <SiMongodb />],
@@ -26,6 +28,7 @@ let projects = [
   {
     name: "Catch the Treasure",
     image: TreasureImg,
+    info: "Help Luffy collect his treasures but avoid the rocks and bombs!",
     git: "https://github.com/durlinlin/Catch-the-treasure",
     demo: "https://durlinlin.github.io/Catch-the-treasure",
     tools: [<SiCss3 />, <SiJavascript />, <SiHtml5 />]
@@ -43,7 +46,9 @@ let projects = [
               <div
                 className="characterName"
                 style={{ backgroundImage: `url(${project.image})` }}
-              ></div>
+                >
+              <div key={key} className="project-info">{project.info}</div>
+              </div>
               <div className="characterQuote">
                 <div key={key} className="quotes">
                   <h2>{project.name}</h2>
