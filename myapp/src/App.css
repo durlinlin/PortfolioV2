@@ -5,7 +5,11 @@
   align-items: flex-start;
   color: white;
   overflow-x: hidden;
-  font-family: 'Crimson Text', serif;
+  /* font-family: 'Crimson Text', serif; */
+  /* font-family: 'Manrope', sans-serif; */
+  font-family: 'ABeeZee', sans-serif;
+
+
 }
 .content-container{
   width: 100%;
