@@ -42,7 +42,7 @@ let projects = [
       {projects.map(
         (project, key) =>
           project.name.includes(props.show) && (
-            <div key={key} className="characterCard">
+            <div key={key} className="characterCard" loading="lazy">
               <div
                 className="characterName"
                 style={{ backgroundImage: `url(${project.image})` }}
